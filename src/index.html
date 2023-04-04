@@ -16,12 +16,49 @@
             <div class="menu__logo">
                 <img src="./images/logo.png" alt="logo" />
             </div>
+            <input class="menu__side-menu" type="checkbox" id="side-menu" />
+            <label class="menu__hamb" for="side-menu">
+                <span class="menu__hamb-line"></span>
+            </label>
             <ul class="menu__items">
                 <li><a href="#">Company profile</a></li>
-                <li><a href="#">Services <i class="fa-solid fa-angle-down"></i></a></li>
+                <li>
+                    <div class="menu__items__dropdown" aria-haspopup="true">
+                        <button class="menu__items__dropdown__dropbtn">
+                            Services <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <div class="menu__items__dropdown__dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="#">Project Portfolio</a></li>
-                <li><a href="#">Capabiloties <i class="fa-solid fa-angle-down"></i></a></li>
-                <li><a href="#">Products <i class="fa-solid fa-angle-down"></i></a></li>
+                <li>
+                    <div class="menu__items__dropdown" aria-haspopup="true">
+                        <button class="menu__items__dropdown__dropbtn">
+                            Capabiloties <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <div class="menu__items__dropdown__dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu__items__dropdown" aria-haspopup="true">
+                        <button class="menu__items__dropdown__dropbtn">
+                            Products <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <div class="menu__items__dropdown__dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="#">Awards</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -29,16 +66,17 @@
         <div class="header__text_container">
             <h1 class="header__title">Material Processing Machinery</h1>
             <ul class="header__breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Material Processing Machinery</a></li>
+                <li><a href="#" class="item">Home</a></li>
+                <li><a href="#" class="item">Services</a></li>
+                <li><a href="#" class="item">Material Processing Machinery</a></li>
             </ul>
         </div>
+        <div class="header-img"></div>
     </header>
 
     <div class="main row">
         <div class="col-6 col-lg-12">
-            <h2 class="main__title">
+            <h2 class="main__title first-title">
                 <span>Plate Burning</span><br /> With 3 burn tables in house we are ready to handle all of your plate
                 Processing needs.
             </h2>
@@ -267,7 +305,7 @@
 
     <section class="contact row">
         <div class="contact-text col-6 col-lg-12">
-            <a href="#" class="contact__get-in-touch">Get in touch</a>
+            <h4 class="contact__get-in-touch">Get in touch</h4>
             <h3 class="contact__h3">Speak to an expert</h3>
             <p class="contact__p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -320,7 +358,7 @@
                 <li>
                     <div class="rectangle"></div>
                 </li>
-                <li>19300 Wesp Hardy road, houston, tx 77073, usa</li>
+                <li><span class="footer__list__address"> Wesp Hardy road, houston, tx 77073, usa</span></li>
             </ul>
         </div>
         <div class="footer__sitemap col-3 col-lg-6">
@@ -336,9 +374,13 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-        <div class="col-3 col-lg-12">
-            <img src="./images/sponsor2.png" alt="sponsor" />
-            <img src="./images/sponsor1.png" alt="sponsor" />
+        <div class="col-3 col-lg-12 sponsors">
+            <div>
+                <img src="./images/sponsor2.png" alt="sponsor" />
+            </div>
+            <div>
+                <img src="./images/sponsor1.png" alt="sponsor" />
+            </div>
         </div>
     </footer>
 
